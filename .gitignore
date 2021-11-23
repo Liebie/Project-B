@@ -50,7 +50,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-!spec/*.json
+!spec/steam.json
 
 # Translations
 *.mo
@@ -125,6 +125,7 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+steam.json
 
 # Pyre type checker
 .pyre/
