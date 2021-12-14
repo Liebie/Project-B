@@ -1,3 +1,4 @@
-file = open('steam.json', 'r')
+with open("steam.json") as f:
+    firstline = f.readlines()[0].rstrip()
 
-print(file.readlines())
+print(firstline)
