@@ -1,4 +1,18 @@
+import tkinter
+from tkinter import *
+
 with open("steam.json") as f:
-    firstline = f.readlines()[0].rstrip()
+    firstline = f.readlines()[3].rstrip()
 
 print(firstline)
+
+win=tkinter.Tk() #creating the main window and storing the window object in 'win'
+#We create the widgets here
+win.geometry('1000x500')
+frame = Frame(win)
+frame.pack()
+second_frame = Frame(win)
+second_frame.pack( side = BOTTOM )
+red_button = Button(frame, text = str(firstline), bg ='red',fg='white')
+red_button.pack( side = LEFT)
+win.mainloop() #running the loop that works as a trigger
